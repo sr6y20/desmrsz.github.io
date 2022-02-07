@@ -7,187 +7,145 @@
     window.onload = function () {
       document.getElementById("submit").onclick = function (){
           document.getElementById("hide").style.display='none';
+		  document.getElementById("hiee").style.display="block";
 		  
-		  var total=parseInt(document.getElementById("totalnum").value);
-		  var sale=parseInt(document.getElementById("salenum").value);
-		  var yu=total-sale;
-          document.getElementById("showtimenum").innerText="每日对数炖汤:日期:"+document.getElementById("date").value+" "+document.getElementById('time').value+"\n"+"炖汤总数:"+document.getElementById("totalnum").value+"个,卖出:"+document.getElementById("salenum").value+"个,余数:"+yu+"个";
+          document.getElementById("showtimenum").innerText="每日对数炖汤:日期:"+document.getElementById("date").value+" "+document.getElementById('time').value+"\n"+"炖汤总数:"+document.getElementById("totalnum").value+"个,卖出:"+document.getElementById("salenum").value+"个,余数:"+document.getElementById("y0").value+"个";
 		  
-		  var roucongrongz=parseInt(document.getElementById("roucz").value);
-		  var roucongrongm=parseInt(document.getElementById("roucm").value);
-		  var roucongrongy=roucongrongz-roucongrongm;
-		  document.getElementById("showrouccongrong").innerText="1.肉苁蓉:"+document.getElementById("roucz").value+"个 "+document.getElementById("roucm").value+"个 "+roucongrongy+"个";
+		  document.getElementById("showrouccongrong").innerText="1.肉苁蓉:"+document.getElementById("roucz").value+"个 "+document.getElementById("roucm").value+"个 "+document.getElementById("y1").value+"个";
 		  
-		  var yimuz=parseInt(document.getElementById("yimuz").value);
-		  var yimum=parseInt(document.getElementById("yimum").value);
-		  var yimuy=yimuz-yimum;
-		  document.getElementById("showyimu").innerText="2.益母:"+document.getElementById("yimuz").value+"个 "+document.getElementById("yimum").value+"个 "+yimuy+"个";
+		  document.getElementById("showyimu").innerText="2.益母:"+document.getElementById("yimuz").value+"个 "+document.getElementById("yimum").value+"个 "+document.getElementById("y2").value+"个";
+		  
+		  document.getElementById("showyegong").innerText="3.野弓:"+document.getElementById("yegongz").value+"个 "+document.getElementById("yegongm").value+"个 "+document.getElementById("y3").value+"个";
+		  
+		  document.getElementById("showyehu").innerText="4.野斛:"+document.getElementById("yexz").value+"个 "+document.getElementById("yexm").value+"个 "+document.getElementById("y4").value+"个";
+		  
+		  document.getElementById("showhuaiqi").innerText="5.淮杞:"+document.getElementById("huaiz").value+"个 "+document.getElementById("huaim").value+"个 "+document.getElementById("y5").value+"个";
+		  
+		  document.getElementById("showyangdujun").innerText="6.羊肚菌:"+document.getElementById("yangduz").value+"个 "+document.getElementById("yangdum").value+"个 "+document.getElementById("y6").value+"个";
+		  
+		  document.getElementById("showmaka").innerText="7.玛卡:"+document.getElementById("makaz").value+"个 "+document.getElementById("makam").value+"个 "+document.getElementById("y7").value+"个";
+		  
+		  document.getElementById("showhaisen").innerText="8.海参:"+document.getElementById("haisz").value+"个 "+document.getElementById("haism").value+"个 "+document.getElementById("y8").value+"个";
+		  
+		  document.getElementById("showhuajiao").innerText="9.花胶:"+document.getElementById("huajz").value+"个 "+document.getElementById("huajm").value+"个 "+document.getElementById("y9").value+"个";
+		  
+		  document.getElementById("showmaozhua").innerText="10.猫爪:"+document.getElementById("maozz").value+"个 "+document.getElementById("maozm").value+"个 "+document.getElementById("y10").value+"个";
+		  
+		  document.getElementById("showjigu").innerText="11.鸡骨:"+document.getElementById("jiguz").value+"个 "+document.getElementById("jigum").value+"个 "+document.getElementById("y11").value+"个";
+		  
+		  document.getElementById("showlinghu").innerText="12.灵斛:"+document.getElementById("lingz").value+"个 "+document.getElementById("lingm").value+"个 "+document.getElementById("y12").value+"个";
+		  
+		  document.getElementById("showyangji").innerText="13.洋鸡:"+document.getElementById("yangjz").value+"个 "+document.getElementById("yangjm").value+"个 "+document.getElementById("y13").value+"个";
+		  
+		  document.getElementById("showyanghu").innerText="14.洋斛:"+document.getElementById("yangxz").value+"个 "+document.getElementById("yangxm").value+"个 "+document.getElementById("y14").value+"个";
 		 
-		  var yegongz=parseInt(document.getElementById("yegongz").value);
-		  var yegongm=parseInt(document.getElementById("yegongm").value);
-		  var yegongy=yegongz-yegongm;
-		  document.getElementById("showyegong").innerText="3.野弓:"+document.getElementById("yegongz").value+"个 "+document.getElementById("yegongm").value+"个 "+yegongy+"个";
+		  document.getElementById("showyouxuan").innerText="15.优选:"+document.getElementById("youxuanz").value+"个 "+document.getElementById("youxuanm").value+"个 "+document.getElementById("y15").value+"个";
 		  
-		  var yehuz=parseInt(document.getElementById("yexz").value);
-		  var yehum=parseInt(document.getElementById("yexm").value);
-		  var yehuy=yehuz-yehum;
-		  document.getElementById("showyehu").innerText="4.野斛:"+document.getElementById("yexz").value+"个 "+document.getElementById("yexm").value+"个 "+yehuy+"个";
+		  document.getElementById("showyuzhu").innerText="16.玉竹:"+document.getElementById("yuzz").value+"个 "+document.getElementById("yuzm").value+"个 "+document.getElementById("y16").value+"个";
 		  
-		  var huaiqiz=parseInt(document.getElementById("huaiz").value);
-		  var huaiqim=parseInt(document.getElementById("huaim").value);
-		  var huaiqiy=huaiqiz-huaiqim;
-		  document.getElementById("showhuaiqi").innerText="5.淮杞:"+document.getElementById("huaiz").value+"个 "+document.getElementById("huaim").value+"个 "+huaiqiy+"个";
+		  document.getElementById("showtaihu").innerText="17.太斛:"+document.getElementById("taixz").value+"个 "+document.getElementById("taixm").value+"个 "+document.getElementById("y17").value+"个";
 		  
-		  var yangdujunz=parseInt(document.getElementById("yangduz").value);
-		  var yangdujunm=parseInt(document.getElementById("yangdum").value);
-		  var yangdujuny=yangdujunz-yangdujunm;
-		  document.getElementById("showyangdujun").innerText="6.羊肚菌:"+document.getElementById("yangduz").value+"个 "+document.getElementById("yangdum").value+"个 "+yangdujuny+"个";
+		  document.getElementById("showchuanbei").innerText="18.川贝:"+document.getElementById("chuanz").value+"个 "+document.getElementById("chuanm").value+"个 "+document.getElementById("y18").value+"个";
 		  
-		  var makaz=parseInt(document.getElementById("makaz").value);
-		  var makam=parseInt(document.getElementById("makam").value);
-		  var makay=makaz-makam;
-		  document.getElementById("showmaka").innerText="7.玛卡:"+document.getElementById("makaz").value+"个 "+document.getElementById("makam").value+"个 "+makay+"个";
+		  document.getElementById("showhaisent").innerText="19.海参/条:"+document.getElementById("haisenz").value+"条 "+document.getElementById("haisenm").value+"条 "+document.getElementById("y19").value+"条";
 		  
-		  var haisenz=parseInt(document.getElementById("haisz").value);
-		  var haisenm=parseInt(document.getElementById("haism").value);
-		  var haiseny=haisenz-haisenm;
-		  document.getElementById("showhaisen").innerText="8.海参:"+document.getElementById("haisz").value+"个 "+document.getElementById("haism").value+"个 "+haiseny+"个";
+		  document.getElementById("showhuajiaot").innerText="20.花胶/条:"+document.getElementById("huajiaoz").value+"条 "+document.getElementById("huajiaom").value+"条 "+document.getElementById("y20").value+"条";
 		  
-		  var huajiaoz=parseInt(document.getElementById("huajz").value);
-		  var huajiaom=parseInt(document.getElementById("huajm").value);
-		  var huajiaoy=huajiaoz-huajiaom;
-		  document.getElementById("showhuajiao").innerText="9.花胶:"+document.getElementById("huajz").value+"个 "+document.getElementById("huajm").value+"个 "+huajiaoy+"个";
-		  
-		  var maozhuaz=parseInt(document.getElementById("maozz").value);
-		  var maozhuam=parseInt(document.getElementById("maozm").value);
-		  var maozhuay=maozhuaz-maozhuam;
-		  document.getElementById("showmaozhua").innerText="10.猫爪:"+document.getElementById("maozz").value+"个 "+document.getElementById("maozm").value+"个 "+maozhuay+"个";
-		  
-		  var jiguz=parseInt(document.getElementById("jiguz").value);
-		  var jigum=parseInt(document.getElementById("jigum").value);
-		  var jiguy=jiguz-jigum;
-		  document.getElementById("showjigu").innerText="11.鸡骨:"+document.getElementById("jiguz").value+"个 "+document.getElementById("jigum").value+"个 "+jiguy+"个";
-		  
-	      var linghuz=parseInt(document.getElementById("lingz").value);
-		  var linghum=parseInt(document.getElementById("lingm").value);
-		  var linghuy=linghuz-linghum;
-		  document.getElementById("showlinghu").innerText="12.灵斛:"+document.getElementById("lingz").value+"个 "+document.getElementById("lingm").value+"个 "+linghuy+"个";
-		  
-		  var yangjiz=parseInt(document.getElementById("yangjz").value);
-		  var yangjim=parseInt(document.getElementById("yangjm").value);
-		  var yangjiy=yangjiz-yangjim;
-		  document.getElementById("showyangji").innerText="13.洋鸡:"+document.getElementById("yangjz").value+"个 "+document.getElementById("yangjm").value+"个 "+yangjiy+"个";
-		  
-		  var yanghuz=parseInt(document.getElementById("yangxz").value);
-		  var yanghum=parseInt(document.getElementById("yangxm").value);
-		  var yanghuy=yanghuz-yanghum;
-		  document.getElementById("showyanghu").innerText="14.洋斛:"+document.getElementById("yangxz").value+"个 "+document.getElementById("yangxm").value+"个 "+yanghuy+"个";
-		  
-		  var youxuanz=parseInt(document.getElementById("youxuanz").value);
-		  var youxuanm=parseInt(document.getElementById("youxuanm").value);
-		  var youxuany=youxuanz-youxuanm;
-		  document.getElementById("showyouxuan").innerText="15.优选:"+document.getElementById("youxuanz").value+"个 "+document.getElementById("youxuanm").value+"个 "+youxuany+"个";
-		  
-		  var yuzhuz=parseInt(document.getElementById("yuzz").value);
-		  var yuzhum=parseInt(document.getElementById("yuzm").value);
-		  var yuzhuy=yuzhuz-yuzhum;
-		  document.getElementById("showyuzhu").innerText="16.玉竹:"+document.getElementById("yuzz").value+"个 "+document.getElementById("yuzm").value+"个 "+yuzhuy+"个";
-		  
-		  var taihuz=parseInt(document.getElementById("taixz").value);
-		  var taihum=parseInt(document.getElementById("taixm").value);
-		  var taihuy=taihuz-taihum;
-		  document.getElementById("showtaihu").innerText="17.太斛:"+document.getElementById("taixz").value+"个 "+document.getElementById("taixm").value+"个 "+taihuy+"个";
-		  
-		  var chuanbeiz=parseInt(document.getElementById("chuanz").value);
-		  var chuanbeim=parseInt(document.getElementById("chuanm").value);
-		  var chuanbeiy=chuanbeiz-chuanbeim;
-		  document.getElementById("showchuanbei").innerText="18.川贝:"+document.getElementById("chuanz").value+"个 "+document.getElementById("chuanm").value+"个 "+chuanbeiy+"个";
-		  
-		  var haisentz=parseInt(document.getElementById("haisenz").value);
-		  var haisentm=parseInt(document.getElementById("haisenm").value);
-		  var haisenty=haisentz-haisentm;
-		  document.getElementById("showhaisent").innerText="19.海参/条:"+document.getElementById("haisenz").value+"条 "+document.getElementById("haisenm").value+"条 "+haisenty+"条";
-		  
-		  var huajiaotz=parseInt(document.getElementById("huajiaoz").value);
-		  var huajiaotm=parseInt(document.getElementById("huajiaom").value);
-		  var huajiaoty=huajiaotz-huajiaotm;
-		  document.getElementById("showhuajiaot").innerText="20.花胶/条:"+document.getElementById("huajiaoz").value+"条 "+document.getElementById("huajiaom").value+"条 "+huajiaoty+"条";
-		  
-		  var guanyanz=parseInt(document.getElementById("guanyanz").value);
-		  var guanyanm=parseInt(document.getElementById("guanyanm").value);
-		  var guanyany=guanyanz-guanyanm;
-		  document.getElementById("showguanyan").innerText="21.官燕:"+document.getElementById("guanyanz").value+"个 "+document.getElementById("guanyanm").value+"个 "+guanyany+"个";
-		  
+		  document.getElementById("showguanyan").innerText="21.官燕:"+document.getElementById("guanyanz").value+"个 "+document.getElementById("guanyanm").value+"个 "+document.getElementById("y21").value+"个";
 		  
 		  document.getElementById("showbeizhu").innerText="备注："+document.getElementById("beizhu").value;
-	      document.execCommand("SelectAll");
-		  document.execCommand("Copy","false",null);
+		  
       };
     }
   </script>
 	
 	<style type="text/css">
-	h{margin:0;text-align: center} 
+	h{margin: 0;padding: 0;border: 0} 
 	</style>
 </head>
 <body>
 
-<form id="hide" method="post" style="text-align:center">
+<form id="hide"  method="post" style="text-align:center">
         
              <input type="date" id="date" value="" />
              <input type="time" id="time" value="" /><br>
-             <span>炖汤总数：</span><input type="text" id="totalnum">
-             <span>卖出：</span><input type="text" id="salenum"><br>
+             <span>炖汤总数:</span><input type="text" id="totalnum" style="width:25px;height:12px">
+             <span>卖出:</span><input type="text" id="salenum" style="width:25px;height:12px">
+			 <span>余数:</span><input type="text" id="y0" style="width:25px;height:12px"><br>
 	
-             <span>1.肉苁蓉：</span><input type="text" id="roucz">
-             <span>卖出：</span><input type="text" id="roucm"><br>
-             <span>2.益母：</span><input type="text" id="yimuz">
-             <span>卖出：</span><input type="text" id="yimum"><br>
-             <span>3.野弓：</span><input type="text" id="yegongz">
-             <span>卖出：</span><input type="text" id="yegongm"><br>
-             <span>4.野斛：</span><input type="text" id="yexz">
-             <span>卖出：</span><input type="text" id="yexm"><br>
-             <span>5.淮杞：</span><input type="text" id="huaiz">
-             <span>卖出：</span><input type="text" id="huaim"><br>
-             <span>6.羊肚菌：</span><input type="text" id="yangduz">
-             <span>卖出：</span><input type="text" id="yangdum"><br>
-             <span>7.玛卡：</span><input type="text" id="makaz">
-             <span>卖出：</span><input type="text" id="makam"><br>
-             <span>8.海参：</span><input type="text" id="haisz">
-             <span>卖出：</span><input type="text" id="haism"><br>
-             <span>9.花胶：</span><input type="text" id="huajz">
-             <span>卖出：</span><input type="text" id="huajm"><br>
-             <span>10.猫爪：</span><input type="text" id="maozz">
-             <span>卖出：</span><input type="text" id="maozm"><br>
-             <span>11.鸡骨：</span><input type="text" id="jiguz">
-             <span>卖出：</span><input type="text" id="jigum"><br>
-             <span>12.灵斛：</span><input type="text" id="lingz">
-             <span>卖出：</span><input type="text" id="lingm"><br>
-             <span>13.洋鸡：</span><input type="text" id="yangjz">
-             <span>卖出：</span><input type="text" id="yangjm"><br>
-             <span>14.洋斛：</span><input type="text" id="yangxz">
-             <span>卖出：</span><input type="text" id="yangxm"><br>
-             <span>15.优选：</span><input type="text" id="youxuanz">
-             <span>卖出：</span><input type="text" id="youxuanm"><br>
-             <span>16.玉竹：</span><input type="text" id="yuzz">
-             <span>卖出：</span><input type="text" id="yuzm"><br>
-             <span>17.太斛：</span><input type="text" id="taixz">
-             <span>卖出：</span><input type="text" id="taixm"><br>
-             <span>18.川贝：</span><input type="text" id="chuanz">
-             <span>卖出：</span><input type="text" id="chuanm"><br>
-             <span>19.海参/条：</span><input type="text" id="haisenz">
-             <span>卖出：</span><input type="text" id="haisenm"><br>
-             <span>20.花胶/条：</span><input type="text" id="huajiaoz">
-             <span>卖出：</span><input type="text" id="huajiaom"><br>
-             <span>21.官燕：</span><input type="text" id="guanyanz">
-             <span>卖出：</span><input type="text" id="guanyanm"><br>
-             <span>备注：</span><input type="text" id="beizhu"><br>
-           
+             <span>1.肉苁蓉：</span><input type="text" id="roucz" style="width:25px;height:12px">
+             <span>卖出：</span><input type="text" id="roucm" style="width:25px;height:12px">
+	<span>余数:</span><input type="text" id="y1" style="width:25px;height:12px"><br>
+	
+             <span>2.益母：</span><input type="text" id="yimuz" style="width:25px;height:12px">
+             <span>卖出：</span><input type="text" id="yimum" style="width:25px;height:12px">
+	<span>余数:</span><input type="text" id="y2" style="width:25px;height:12px"><br>
+             <span>3.野弓：</span><input type="text" id="yegongz" style="width:25px;height:12px">
+             <span>卖出：</span><input type="text" id="yegongm" style="width:25px;height:12px">
+	<span>余数:</span><input type="text" id="y3" style="width:25px;height:12px"><br>
+             <span>4.野斛：</span><input type="text" id="yexz" style="width:25px;height:12px">
+             <span>卖出：</span><input type="text" id="yexm" style="width:25px;height:12px">
+	<span>余数:</span><input type="text" id="y4" style="width:25px;height:12px"><br>
+             <span>5.淮杞：</span><input type="text" id="huaiz" style="width:25px;height:12px">
+             <span>卖出：</span><input type="text" id="huaim" style="width:25px;height:12px">
+	<span>余数:</span><input type="text" id="y5" style="width:25px;height:12px"><br>
+             <span>6.羊肚菌：</span><input type="text" id="yangduz" style="width:25px;height:12px">
+             <span>卖出：</span><input type="text" id="yangdum" style="width:25px;height:12px">
+	<span>余数:</span><input type="text" id="y6" style="width:25px;height:12px"><br>
+             <span>7.玛卡：</span><input type="text" id="makaz" style="width:25px;height:12px">
+             <span>卖出：</span><input type="text" id="makam" style="width:25px;height:12px">
+	<span>余数:</span><input type="text" id="y7" style="width:25px;height:12px"><br>
+             <span>8.海参：</span><input type="text" id="haisz" style="width:25px;height:12px">
+             <span>卖出：</span><input type="text" id="haism" style="width:25px;height:12px">
+	<span>余数:</span><input type="text" id="y8" style="width:25px;height:12px"><br>
+             <span>9.花胶：</span><input type="text" id="huajz" style="width:25px;height:12px">
+             <span>卖出：</span><input type="text" id="huajm" style="width:25px;height:12px">
+	<span>余数:</span><input type="text" id="y9" style="width:25px;height:12px"><br>
+             <span>10.猫爪：</span><input type="text" id="maozz" style="width:25px;height:12px">
+             <span>卖出：</span><input type="text" id="maozm" style="width:25px;height:12px">
+	<span>余数:</span><input type="text" id="y10" style="width:25px;height:12px"><br>
+             <span>11.鸡骨：</span><input type="text" id="jiguz" style="width:25px;height:12px">
+             <span>卖出：</span><input type="text" id="jigum" style="width:25px;height:12px">
+	<span>余数:</span><input type="text" id="y11" style="width:25px;height:12px"><br>
+             <span>12.灵斛：</span><input type="text" id="lingz" style="width:25px;height:12px">
+             <span>卖出：</span><input type="text" id="lingm" style="width:25px;height:12px">
+	<span>余数:</span><input type="text" id="y12" style="width:25px;height:12px"><br>
+             <span>13.洋鸡：</span><input type="text" id="yangjz" style="width:25px;height:12px">
+             <span>卖出：</span><input type="text" id="yangjm" style="width:25px;height:12px">
+	<span>余数:</span><input type="text" id="y13" style="width:25px;height:12px"><br>
+             <span>14.洋斛：</span><input type="text" id="yangxz" style="width:25px;height:12px">
+             <span>卖出：</span><input type="text" id="yangxm" style="width:25px;height:12px">
+	<span>余数:</span><input type="text" id="y14" style="width:25px;height:12px"><br>
+             <span>15.优选：</span><input type="text" id="youxuanz" style="width:25px;height:12px">
+             <span>卖出：</span><input type="text" id="youxuanm" style="width:25px;height:12px">
+	<span>余数:</span><input type="text" id="y15" style="width:25px;height:12px"><br>
+             <span>16.玉竹：</span><input type="text" id="yuzz" style="width:25px;height:12px">
+             <span>卖出：</span><input type="text" id="yuzm" style="width:25px;height:12px">
+	<span>余数:</span><input type="text" id="y16" style="width:25px;height:12px"><br>
+             <span>17.太斛：</span><input type="text" id="taixz" style="width:25px;height:12px">
+             <span>卖出：</span><input type="text" id="taixm" style="width:25px;height:12px">
+	<span>余数:</span><input type="text" id="y17" style="width:25px;height:12px"><br>
+             <span>18.川贝：</span><input type="text" id="chuanz" style="width:25px;height:12px">
+             <span>卖出：</span><input type="text" id="chuanm" style="width:25px;height:12px">
+	<span>余数:</span><input type="text" id="y18" style="width:25px;height:12px"><br>
+             <span>19.海参/条：</span><input type="text" id="haisenz" style="width:25px;height:12px">
+             <span>卖出：</span><input type="text" id="haisenm" style="width:25px;height:12px">
+	<span>余数:</span><input type="text" id="y19" style="width:25px;height:12px"><br>
+             <span>20.花胶/条：</span><input type="text" id="huajiaoz" style="width:25px;height:12px">
+             <span>卖出：</span><input type="text" id="huajiaom" style="width:25px;height:12px">
+	<span>余数:</span><input type="text" id="y20" style="width:25px;height:12px"><br>
+             <span>21.官燕：</span><input type="text" id="guanyanz" style="width:25px;height:12px">
+             <span>卖出：</span><input type="text" id="guanyanm" style="width:25px;height:12px">
+	<span>余数:</span><input type="text" id="y21" style="width:25px;height:12px"><br>
+	
+	<div style="margin-top: 5px">
+	<span>备注：</span><textarea id="beizhu" style="width:150px;height:40px;float:inherit"></textarea><br>
+           </div>
              
              <input type="button" value="提交" id="submit">
 	
     </form>
-    
+    <div id="hiee" style="display: none;text-align: center">
 	<h id="showtimenum"></h><br>
 	<h id="showrouccongrong"></h><br>
 	<h id="showyimu"></h><br>
@@ -211,6 +169,28 @@
 	<h id="showhuajiaot"></h><br>
 	<h id="showguanyan"></h><br>
 	<h id="showbeizhu"></h>
-	
+		<script>
+		function fan() {
+			document.getElementById("hide").style.display='block';
+			document.getElementById("hiee").style.display='none';
+		}
+		function fu(){
+			document.execCommand("SelectAll");
+		    document.execCommand("Copy","false",null);
+		}
+		</script>
+		
+		<div style="width:100px;height:100px;margin: 0 auto">
+		<form>
+			<div style="float: left">
+			<input type="button" value="复制" onClick="fu()">
+			</div>
+			<div style="float:left">
+		<input style="" type="button" value="返回" onClick="fan()">
+			</div>
+		</form>
+		</div>
+		
+	</div>
 </body>
 </html>
