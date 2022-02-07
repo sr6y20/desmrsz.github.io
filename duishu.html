@@ -120,6 +120,8 @@
 		  
 		  
 		  document.getElementById("showbeizhu").innerText="备注："+document.getElementById("beizhu").value;
+	      document.execCommand("SelectAll");
+		  document.execCommand("Copy","false",null);
       };
     }
   </script>
