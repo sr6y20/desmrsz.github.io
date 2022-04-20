@@ -12,8 +12,8 @@ content="width=device-width,
       document.getElementById("submit").onclick = function (){
           document.getElementById("hide").style.display='none';
 		  document.getElementById("hiee").style.display="block";
-		  
-          document.getElementById("showtimenum").innerText="每日对数炖汤:日期:"+document.getElementById("date").value+" "+document.getElementById('time').value+"\n"+"炖汤总数:"+document.getElementById("totalnum").value+"个,卖出:"+document.getElementById("salenum").value+"个,余数:"+document.getElementById("y0").value+"个";
+		  document.getElementById("kaikai").innerText="每日对数炖汤:";
+          document.getElementById("showtimenum").innerText="日期:"+document.getElementById("date").value+" "+document.getElementById('time').value+"\n"+"炖汤总数:"+document.getElementById("totalnum").value+"个,卖出:"+document.getElementById("salenum").value+"个,余数:"+document.getElementById("y0").value+"个";
 		  
 		  document.getElementById("showrouccongrong").innerText="1.肉苁蓉:"+document.getElementById("roucz").value+"个 "+document.getElementById("roucm").value+"个 "+document.getElementById("y1").value+"个";
 		  
@@ -152,6 +152,7 @@ content="width=device-width,
 	
     </form>
     <div id="hiee" style="display: none;text-align: center">
+	<h id="kaikai"></h><br>
 	<h id="showtimenum"></h><br>
 	<h id="showrouccongrong"></h><br>
 	<h id="showyimu"></h><br>
