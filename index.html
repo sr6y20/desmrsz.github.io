@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+
+	<title>选择器</title>
+	<script src="js/jQuery.js"></script>
+	<style>
+		div {
+			margin: 0;
+			padding: 0;
+		}
+		
+		.c1 {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #002EA6;
+			text-align: center;
+		}
+		
+		.c2 {
+			position: absolute;
+			width: 50%;
+			height: 100%;
+			top: 0;
+			left: 50%;
+			background-color: #FFE78F;
+			text-align: center;
+		}
+		
+		.p1 {
+			writing-mode: vertical-lr;
+			position: relative;
+			top: 45%;
+			left: 20%;
+			font-size: 50px;
+			color: #FFE78F;
+			letter-spacing: 5px;
+			z-index: 999;
+            height: 220px;
+		}
+		
+		.p2 {
+			writing-mode: vertical-lr;
+			position: relative;
+			top: 45%;
+			left: 40%;
+			font-size: 50px;
+			color: #002EA6;
+			letter-spacing: 5px;
+			z-index: 999;
+            height: 220px;
+		}
+	</style>
+	<link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+	<div class="c1">
+		<p class="p1">每日对数</p>
+	</div>
+	<div class="c2">
+		<p class="p2">每日总结</p>
+	</div>
+	<script>
+		$(function(){
+            $(".c1").on("click",function(){
+                location.assign("https://zzzuis.gitee.io/tian/duishu.html");
+            })
+            $(".c2").on("click",function(){
+                location.assign("https://zzzuis.gitee.io/tian/zongjie.html");
+            })
+        })
+	</script>
+</body>
+
+</html>

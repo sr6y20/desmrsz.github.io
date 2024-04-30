@@ -1,210 +1,35 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" 
-content="width=device-width, 
-    initial-scale=1.0,
-    maximum-scale=1.0,
-    user-scalable=0" charset="UTF-8">
-<title>每日对数</title>
-	 <script>
-    window.onload = function () {
-      document.getElementById("submit").onclick = function (){
-          document.getElementById("hide").style.display='none';
-		  document.getElementById("hiee").style.display="block";
-		  document.getElementById("kaikai").innerText="每日对数炖汤:";
-          document.getElementById("showtimenum").innerText="日期:"+document.getElementById("date").value+" "+document.getElementById('time').value+"\n"+"炖汤总数:"+document.getElementById("totalnum").value+"个,卖出:"+document.getElementById("salenum").value+"个,余数:"+document.getElementById("y0").value+"个";
-		  
-		  document.getElementById("showrouccongrong").innerText="1.陈斛:"+document.getElementById("roucz").value+"个 "+document.getElementById("roucm").value+"个 "+document.getElementById("y1").value+"个";
-		  
-		  document.getElementById("showyimu").innerText="2.益母:"+document.getElementById("yimuz").value+"个 "+document.getElementById("yimum").value+"个 "+document.getElementById("y2").value+"个";
-		  
-		  document.getElementById("showyegong").innerText="3.野弓:"+document.getElementById("yegongz").value+"个 "+document.getElementById("yegongm").value+"个 "+document.getElementById("y3").value+"个";
-		  
-	          document.getElementById("showrenshen").innerText="4.人参:"+document.getElementById("renshenz").value+"个 "+document.getElementById("renshenm").value+"个 "+document.getElementById("y22").value+"个";
-	      
-		  document.getElementById("showyehu").innerText="5.野斛:"+document.getElementById("yexz").value+"个 "+document.getElementById("yexm").value+"个 "+document.getElementById("y4").value+"个";
-		  
-		  document.getElementById("showhuaiqi").innerText="6.淮杞:"+document.getElementById("huaiz").value+"个 "+document.getElementById("huaim").value+"个 "+document.getElementById("y5").value+"个";
-		  
-		  document.getElementById("showyangdujun").innerText="7.羊肚菌:"+document.getElementById("yangduz").value+"个 "+document.getElementById("yangdum").value+"个 "+document.getElementById("y6").value+"个";
-		  
-		  document.getElementById("showmaka").innerText="8.玛卡:"+document.getElementById("makaz").value+"个 "+document.getElementById("makam").value+"个 "+document.getElementById("y7").value+"个";
-		  
-		  document.getElementById("showhaisen").innerText="9.海参:"+document.getElementById("haisz").value+"个 "+document.getElementById("haism").value+"个 "+document.getElementById("y8").value+"个";
-		  
-		  document.getElementById("showhuajiao").innerText="10.花胶:"+document.getElementById("huajz").value+"个 "+document.getElementById("huajm").value+"个 "+document.getElementById("y9").value+"个";
-		  
-		  document.getElementById("showmaozhua").innerText="11.猫爪:"+document.getElementById("maozz").value+"个 "+document.getElementById("maozm").value+"个 "+document.getElementById("y10").value+"个";
-		  
-		  document.getElementById("showjigu").innerText="12.鸡骨:"+document.getElementById("jiguz").value+"个 "+document.getElementById("jigum").value+"个 "+document.getElementById("y11").value+"个";
-		  
-		  document.getElementById("showlinghu").innerText="13.灵斛:"+document.getElementById("lingz").value+"个 "+document.getElementById("lingm").value+"个 "+document.getElementById("y12").value+"个";
-		  
-		  document.getElementById("showyangji").innerText="14.洋鸡:"+document.getElementById("yangjz").value+"个 "+document.getElementById("yangjm").value+"个 "+document.getElementById("y13").value+"个";
-		  
-		  document.getElementById("showyanghu").innerText="15.洋斛:"+document.getElementById("yangxz").value+"个 "+document.getElementById("yangxm").value+"个 "+document.getElementById("y14").value+"个";
-		 
-		  document.getElementById("showyouxuan").innerText="16.优选:"+document.getElementById("youxuanz").value+"个 "+document.getElementById("youxuanm").value+"个 "+document.getElementById("y15").value+"个";
-		  
-		  document.getElementById("showyuzhu").innerText="17.玉竹:"+document.getElementById("yuzz").value+"个 "+document.getElementById("yuzm").value+"个 "+document.getElementById("y16").value+"个";
-		  
-		  document.getElementById("showtaihu").innerText="18.太斛:"+document.getElementById("taixz").value+"个 "+document.getElementById("taixm").value+"个 "+document.getElementById("y17").value+"个";
-		  
-		  document.getElementById("showchuanbei").innerText="19.川贝:"+document.getElementById("chuanz").value+"个 "+document.getElementById("chuanm").value+"个 "+document.getElementById("y18").value+"个";
-		  
-		  document.getElementById("showhaisent").innerText="20.海参/条:"+document.getElementById("haisenz").value+"条 "+document.getElementById("haisenm").value+"条 "+document.getElementById("y19").value+"条";
-		  
-		  document.getElementById("showhuajiaot").innerText="21.花胶/条:"+document.getElementById("huajiaoz").value+"条 "+document.getElementById("huajiaom").value+"条 "+document.getElementById("y20").value+"条";
-		  
-		  document.getElementById("showguanyan").innerText="22.官燕:"+document.getElementById("guanyanz").value+"个 "+document.getElementById("guanyanm").value+"个 "+document.getElementById("y21").value+"个";
-	      
-		  document.getElementById("showbeizhu").innerText="备注："+document.getElementById("beizhu").value;
-		  
-      };
-    }
-  </script>
-	
-	<style type="text/css">
-	h{margin: 0;padding: 0;border: 0} 
-	body{max-width: 950px;background: url("QQ截图20220420120632.png");font-family: '宋体';font-weight: bold}	
-		form span{letter-spacing : 1pt; line-height : 150%;font-size: 17px}
-	</style>
-</head>
-<body>
+<html lang="en">
 
-<form id="hide"  method="post" style="text-align:center">
-        <br>
-             <input type="date" id="date" value="" />
-             <input type="time" id="time" value="" /><br>
-             <span>炖汤总数:</span><input type="text" id="totalnum" style="width:25px;height:15px">
-             <span>卖出:</span><input type="text" id="salenum" style="width:25px;height:15px">
-			 <span>余数:</span><input type="text" id="y0" style="width:25px;height:15px"><br>
-	
-             <span>1.陈斛：</span><input type="text" id="roucz" style="width:25px;height:15px">
-             <span>卖出：</span><input type="text" id="roucm" style="width:25px;height:15px">
-	<span>余数:</span><input type="text" id="y1" style="width:25px;height:15px"><br>
-	
-             <span>2.益母：</span><input type="text" id="yimuz" style="width:25px;height:15px">
-             <span>卖出：</span><input type="text" id="yimum" style="width:25px;height:15px">
-	<span>余数:</span><input type="text" id="y2" style="width:25px;height:15px"><br>
-             <span>3.野弓：</span><input type="text" id="yegongz" style="width:25px;height:15px">
-             <span>卖出：</span><input type="text" id="yegongm" style="width:25px;height:15px">
-	<span>余数:</span><input type="text" id="y3" style="width:25px;height:15px"><br>
-	     <span>4.人参：</span><input type="text" id="renshenz" style="width:25px;height:15px">
-             <span>卖出：</span><input type="text" id="renshenm" style="width:25px;height:15px">
-	<span>余数:</span><input type="text" id="y22" style="width:25px;height:15px"><br>
-             <span>5.野斛：</span><input type="text" id="yexz" style="width:25px;height:15px">
-             <span>卖出：</span><input type="text" id="yexm" style="width:25px;height:15px">
-	<span>余数:</span><input type="text" id="y4" style="width:25px;height:15px"><br>
-             <span>6.淮杞：</span><input type="text" id="huaiz" style="width:25px;height:15px">
-             <span>卖出：</span><input type="text" id="huaim" style="width:25px;height:15px">
-	<span>余数:</span><input type="text" id="y5" style="width:25px;height:15px"><br>
-             <span>7.羊肚菌：</span><input type="text" id="yangduz" style="width:25px;height:15px">
-             <span>卖出：</span><input type="text" id="yangdum" style="width:25px;height:15px">
-	<span>余数:</span><input type="text" id="y6" style="width:25px;height:15px"><br>
-             <span>8.玛卡：</span><input type="text" id="makaz" style="width:25px;height:15px">
-             <span>卖出：</span><input type="text" id="makam" style="width:25px;height:15px">
-	<span>余数:</span><input type="text" id="y7" style="width:25px;height:15px"><br>
-             <span>9.海参：</span><input type="text" id="haisz" style="width:25px;height:15px">
-             <span>卖出：</span><input type="text" id="haism" style="width:25px;height:15px">
-	<span>余数:</span><input type="text" id="y8" style="width:25px;height:15px"><br>
-             <span>10.花胶：</span><input type="text" id="huajz" style="width:25px;height:15px">
-             <span>卖出：</span><input type="text" id="huajm" style="width:25px;height:15px">
-	<span>余数:</span><input type="text" id="y9" style="width:25px;height:15px"><br>
-             <span>11.猫爪：</span><input type="text" id="maozz" style="width:25px;height:15px">
-             <span>卖出：</span><input type="text" id="maozm" style="width:25px;height:15px">
-	<span>余数:</span><input type="text" id="y10" style="width:25px;height:15px"><br>
-             <span>12.鸡骨：</span><input type="text" id="jiguz" style="width:25px;height:15px">
-             <span>卖出：</span><input type="text" id="jigum" style="width:25px;height:15px">
-	<span>余数:</span><input type="text" id="y11" style="width:25px;height:15px"><br>
-             <span>13.灵斛：</span><input type="text" id="lingz" style="width:25px;height:15px">
-             <span>卖出：</span><input type="text" id="lingm" style="width:25px;height:15px">
-	<span>余数:</span><input type="text" id="y12" style="width:25px;height:15px"><br>
-             <span>14.洋鸡：</span><input type="text" id="yangjz" style="width:25px;height:15px">
-             <span>卖出：</span><input type="text" id="yangjm" style="width:25px;height:15px">
-	<span>余数:</span><input type="text" id="y13" style="width:25px;height:15px"><br>
-             <span>15.洋斛：</span><input type="text" id="yangxz" style="width:25px;height:15px">
-             <span>卖出：</span><input type="text" id="yangxm" style="width:25px;height:15px">
-	<span>余数:</span><input type="text" id="y14" style="width:25px;height:15px"><br>
-             <span>16.优选：</span><input type="text" id="youxuanz" style="width:25px;height:15px">
-             <span>卖出：</span><input type="text" id="youxuanm" style="width:25px;height:15px">
-	<span>余数:</span><input type="text" id="y15" style="width:25px;height:15px"><br>
-             <span>17.玉竹：</span><input type="text" id="yuzz" style="width:25px;height:15px">
-             <span>卖出：</span><input type="text" id="yuzm" style="width:25px;height:15px">
-	<span>余数:</span><input type="text" id="y16" style="width:25px;height:15px"><br>
-             <span>18.太斛：</span><input type="text" id="taixz" style="width:25px;height:15px">
-             <span>卖出：</span><input type="text" id="taixm" style="width:25px;height:15px">
-	<span>余数:</span><input type="text" id="y17" style="width:25px;height:15px"><br>
-             <span>19.川贝：</span><input type="text" id="chuanz" style="width:25px;height:15px">
-             <span>卖出：</span><input type="text" id="chuanm" style="width:25px;height:15px">
-	<span>余数:</span><input type="text" id="y18" style="width:25px;height:15px"><br>
-             <span>20.海参/条：</span><input type="text" id="haisenz" style="width:25px;height:15px">
-             <span>卖出：</span><input type="text" id="haisenm" style="width:25px;height:15px">
-	<span>余数:</span><input type="text" id="y19" style="width:25px;height:15px"><br>
-             <span>21.花胶/条：</span><input type="text" id="huajiaoz" style="width:25px;height:15px">
-             <span>卖出：</span><input type="text" id="huajiaom" style="width:25px;height:15px">
-	<span>余数:</span><input type="text" id="y20" style="width:25px;height:15px"><br>
-             <span>22.官燕：</span><input type="text" id="guanyanz" style="width:25px;height:15px">
-             <span>卖出：</span><input type="text" id="guanyanm" style="width:25px;height:15px">
-	<span>余数:</span><input type="text" id="y21" style="width:25px;height:15px"><br>
-	
-	
-	<div style="margin-top: 5px">
-	<span>备注：</span><textarea id="beizhu" style="width:150px;height:40px;float:inherit"></textarea><br>
-           </div>
-             <br>
-             <input style="width: 70px;height: 40px" type="button" value="提交" id="submit">
-	
-    </form>
-    <div id="hiee" style="display: none;text-align: center">
-	<h id="kaikai"></h><br>
-	<h id="showtimenum"></h><br>
-	<h id="showrouccongrong"></h><br>
-	<h id="showyimu"></h><br>
-	<h id="showyegong"></h><br>
-    <h id="showrenshen"></h><br>
-	<h id="showyehu"></h><br>
-	<h id="showhuaiqi"></h><br>
-	<h id="showyangdujun"></h><br>
-	<h id="showmaka"></h><br>
-	<h id="showhaisen"></h><br>
-	<h id="showhuajiao"></h><br>
-	<h id="showmaozhua"></h><br>
-	<h id="showjigu"></h><br>
-	<h id="showlinghu"></h><br>
-	<h id="showyangji"></h><br>
-	<h id="showyanghu"></h><br>
-	<h id="showyouxuan"></h><br>
-	<h id="showyuzhu"></h><br>
-	<h id="showtaihu"></h><br>
-	<h id="showchuanbei"></h><br>
-	<h id="showhaisent"></h><br>
-	<h id="showhuajiaot"></h><br>
-	<h id="showguanyan"></h><br>
-	<h id="showbeizhu"></h>
-		<script>
-		function fan() {
-			document.getElementById("hide").style.display='block';
-			document.getElementById("hiee").style.display='none';
-		}
-		function fu(){
-			document.execCommand("SelectAll");
-		    document.execCommand("Copy","false",null);
-		}
-		</script>
-		
-		<div style="width:140px;height:100px;margin: 0 auto">
-		<form>
-			<div style="float: left">
-			<input style="width: 70px;height: 40px" type="button" value="复制" onClick="fu()">
-			</div>
-			<div style="float:left">
-		<input style="width: 70px;height: 40px" type="button" value="返回" onClick="fan()">
-			</div>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<title>每日对数</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<script src="js/jQuery.js"></script>
+	<script src="js/dui.js"></script>
+</head>
+
+<body style="background-image: url('css/1.jpg');-moz-background-size:100%; background-size:100%;">
+	<p class="tem"></p>
+	<!-- <p class="city">这里是新会</p> -->
+	<p class="weather">
+		<img class="icon" id="weather" src="" alt="">
+	</p>
+	<div class="g">
+		<form id="hide" method="post">
+			<br>
+			<input style="border:1px solid skyblue;border-radius:5px" type="date" id="date" value="" />
+			<input style="border:1px solid skyblue;border-radius:5px" type="time" id="time" value="" /><br>
+
 		</form>
-		</div>
-		
 	</div>
+	<div id="hiee">
+
+	</div>
+
 </body>
+
 </html>
